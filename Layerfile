@@ -9,7 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
 RUN npm install -g http-server
 
 COPY . .
-RUN echo 'kuha pääsee läpi' > hello.html
+RUN echo 'ni kaikki hyvin' > hello.html
 
 RUN BACKGROUND http-server -p 8000
 EXPOSE WEBSITE http://localhost:8000
